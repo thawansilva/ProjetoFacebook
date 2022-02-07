@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* General Style */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    background-color: #F0F2F5;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seção login */
+.global {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 6em;
+    gap: 2em;
+}
+
+.account_area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .4em;
+}
+
+#img {
+    max-width: 225px;
+    margin-bottom: -20px;
+}
+
+img {
+    width: 100%;
+}
+
+#msg_add {
+    margin-bottom: 1em;
+    color: #606770;
+}
+
+
+.account {
+    display: flex;
+    gap: 1em;
+}
+
+.account_item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    border-radius: .5em;
+    background-color: white;
+    width: 10em;
+    height: 13.5em;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add_account {
+    background-color: #F5F6F7;
+    border-radius: .5em;
+    flex-grow: 4;
+}
+
+.add_account i {
+    font-size: 2.5rem;
+    color: #1976F2;
+}
+
+.add_account_txt {
+    flex-grow: 1;
+    color: #1976F2;
+    font-weight: 600;
+}
+
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 1em;
+    padding: 1em;
+    min-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.247);
+}
+
+.inpt {
+    padding: 0em 1.125em;
+    font-size: 1rem;
+    color: black;
+}
+
+input,
+button {
+    min-height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+}
+
+#btn_blue {
+    background-color: #1976F2;
+    font-size: 1.125rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.line {
+    border-top: .1px solid rgba(0, 0, 0, 0.247);
+}
+
+#btn_green {
+    background-color: #42B72A;
+    font-size: 1.125rem;
+    font-weight: bolder;
+    margin-bottom: .8em;
+    padding: 0em 1em;
+    color: white;
+    border: none;
+}
+
+#link_pw {
+    color: #1976F2;
+    font-size: .9rem;
+    align-self: center;
+}
+
+#txt_page {
+    font-size: .85rem;
+    margin: 1.5em 0em;
+}
+
+#create_page {
+    color: black;
+    font-weight: bolder;
+}
+
+/* footer */
+footer {
+    background-color: white;
+    padding: 2em 0em;
+}
+
+.link_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125em;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: .7em;
+    align-content: flex-end;
+    font-size: .75rem;
+}
+
+#btn_language {
+    background-color: white;
+    border: 1px solid #60677046;
+    border-radius: 5px;
+    padding: .3em .8em;
+}
+
+ul {
+    justify-content: stretch;
+    display: flex;
+    gap: .9em;
+}
+
+a,
+ul,
+span {
+    color: #606770bb;
+}
+
+span {
+    font-size: .75rem;
+}
+
+/* Effects */
+.account_item:hover {
+    box-shadow: 0px 0px 10px #60677050;
+    transition-duration: .125s
+}
+
+input:focus {
+    /* alterando a borda do input quando tá em foco*/
+    outline: none;
+    border-color: #1976F2;
+    box-shadow: 0 0 5px #719ECE;
+}
+
+#btn_blue:hover {
+    background-color: #1a6fdf;
+    transition-duration: .125s;
+}
+
+#btn_green:hover {
+    background-color: #338d21;
+    transition-duration: .125s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn,
+a:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 900px) {
+    .global {
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: row;
+        margin-top: 6em;
+    }
+
+    #user_area {
+        align-items: flex-start;
+    }
+
+    #img {
+        width: 60%;
+        margin: -15px -20px;
+    }
+}
